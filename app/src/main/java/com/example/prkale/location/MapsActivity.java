@@ -33,7 +33,7 @@ public class MapsActivity extends FragmentActivity implements GoogleApiClient.On
     private View mLayout;
     private LocationRequest mLocationRequest;
     /**
-     * Id to identify a camera permission request.
+     * Id to identify a location permission request.
      */
     private static final int REQUEST_LOCATION_FINE = 0;
 
@@ -53,7 +53,7 @@ public class MapsActivity extends FragmentActivity implements GoogleApiClient.On
 
         } else {
 
-            // Camera permissions is already available, show the camera preview.
+            // location permissions is already available
             Log.i(TAG,
                     "Location Permission granted");
         }
@@ -94,7 +94,7 @@ public class MapsActivity extends FragmentActivity implements GoogleApiClient.On
                     .show();
         } else {
 
-            // Camera permission has not been granted yet. Request it directly.
+            // location permission has not been granted yet. Request it directly.
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
                     REQUEST_LOCATION_FINE);
         }
