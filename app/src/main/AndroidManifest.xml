@@ -34,6 +34,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".TabbedActivity"
+            android:label="@string/title_activity_tabbed" >
+        </activity>
+        <activity
+            android:name=".CollectionDemoActivity"
+            android:label="@string/title_activity_collection_demo" >
+        </activity>
+        <activity
+            android:name=".MapsFragmentActivity"
+            android:label="@string/title_activity_maps_fragment" >
+        </activity>
     </application>
 
 </manifest>
